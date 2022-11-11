@@ -1,6 +1,6 @@
 # LadderParser
 
-**Convert 2D ASCII PLC ladder logic into executable elixir code**
+**PLC ladder logic parser that converts 2D ASCII text into Elixir code**
 
 ## Getting started
 
