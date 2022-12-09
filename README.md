@@ -1,4 +1,4 @@
-# LadderParser
+# ladder_parser
 
 **PLC ladder logic parser that converts 2D ASCII text into Elixir code**
 
