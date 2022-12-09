@@ -75,7 +75,11 @@ flowchart LR
 ladder_parser uses [Elixir](https://elixir-lang.org/) and [Nx](https://hexdocs.pm/nx/Nx.html) to convert a two dimensional string into a matrix (tensor). A series of tokens are defined, and the matrix is scanned searching for the tokens. The result is then converted into elixir syntax, which can be represented as an abstract syntax tree (AST). Example values are assigned to the inputs and the logic is executed.
 
 ## Possibilities
-Having the logic represented as a tree, opens up a number of useful possibilities. It could be used to generate documentation and ladder logic in different dialects, for example in PLC upgrade projects. It could also be used to run simulations locally without a PLC. It could be converted to target a [Nerves](https://www.nerves-project.org/) device rather than a traditional PLC. It could also be used to format the code in a suitable form to explore [the power of prolog](https://youtu.be/8XUutFBbUrg) - for instance, imagine you have a legacy PLC with 10k rungs of spaghetti code and you want to know all possible situations that would cause sequence 18 to transition to step 34.
+Having the logic represented as a tree opens up a number of useful possibilities. The AST could be used to:
+* Generate documentation and ladder logic in different dialects, for example in PLC upgrade projects. 
+* Run simulations locally without a PLC. 
+* Convert to target a [Nerves](https://www.nerves-project.org/) device rather than a traditional PLC. 
+* Format the code in a suitable form to explore [the power of prolog](https://youtu.be/8XUutFBbUrg) - for instance, imagine you have a legacy PLC with 10k rungs of spaghetti code and you want to know all possible situations that would cause sequence 18 to transition to step 34.
 
 ## Note
 I don't have a computer science background, so my terminology may be sloppy. I learnt all I know about parsers from Saša Jurić's fantastic talk [Parsing from first principles - WebCamp Zagreb 2019](https://youtu.be/xNzoerDljjo).
